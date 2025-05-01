@@ -1,0 +1,17 @@
+<div id="root-order-forms-ext"></div>
+
+<script>
+  window.shopifyData = {
+    name: '{{ customer.first_name }}',
+  };
+</script>
+
+{% schema %}
+  {
+    "name": "order-forms-ext",
+    "target": "section",
+    "javascript": "order-forms-ext-index.js",
+    "stylesheet": "order-forms-ext-index.css",
+    "settings": []
+  }
+{% endschema %}
